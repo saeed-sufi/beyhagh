@@ -25,22 +25,23 @@ if (empty($_POST["terms"])) {
     $terms = $_POST["terms"];
 }
 
-$EmailTo = "yourname@domain.com";
+$EmailTo = "sufi.geo@gmail.com";
 $Subject = "پیام جدید ارسالی از سایت ";
 
 // prepare email body text
 $Body = "";
-$Body .= "Name: ";
+$Body .= "نام:  ";
 $Body .= $name;
 $Body .= "\n";
-$Body .= "Email: ";
+$Body .= "ایمیل: ";
 $Body .= $email;
 $Body .= "\n";
-$Body .= "Message: ";
+$Body .= "\n";
+$Body .= "متن پیام: ";
 $Body .= $message;
 $Body .= "\n";
-$Body .= "Terms: ";
-$Body .= $terms;
+// $Body .= "Terms: ";
+// $Body .= $terms;
 $Body .= "\n";
 
 // send email
@@ -48,7 +49,7 @@ $success = mail($EmailTo, $Subject, $Body, "From:".$email);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
-   echo "موفق";
+   echo "پیام با موفقیت ارسال شد.";
 }else{
     if($errorMSG == ""){
         echo "ارسال ناموفق بود... ";

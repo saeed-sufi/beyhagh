@@ -132,6 +132,11 @@ a.green {
 a.white,
 .white {
   color: #dfe5ec;
+  transition: color .2s;
+}
+
+a.white:hover {
+  color: #14bf98;
 }
 
 .testimonial-text {
@@ -837,6 +842,9 @@ input[type="checkbox"] {
 .text-container--tar {
   text-align: right;
 }
+.text-container--tac-until-med {
+  text-align: center;
+}
 
 .text-container p {
   line-height: 1.8;
@@ -854,6 +862,19 @@ input[type="checkbox"] {
 .header h1 {
   margin-bottom: 1.5rem;
   color: #fff;
+}
+
+.header h3 {
+  color: #14bf98;
+}
+
+h3 a {
+  color: #14bf98;
+  text-decoration: none;
+  transition: color .2s;
+}
+h3 a:hover {
+  color: #14bf98;
 }
 
 .header .p-large {
@@ -1978,7 +1999,9 @@ a:hover.back-to-top {
     font: 400 1.4rem/1.625rem "Shabnam", sans-serif;
     line-height: 1.5;
   }
-
+.text-container--tac-until-med {
+  text-align: right;
+}
 
   /* end of general styles */
 
@@ -2577,5 +2600,10 @@ a:hover.back-to-top {
   margin-left: auto;
   width: 100%;
   max-width: 50rem;
-  /* height: 100%; */
+  /* position: relative; */
+  /* z-index: 1; */
+}
+
+.ovh {
+  overflow: hidden;
 }
