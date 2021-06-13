@@ -31,3 +31,6 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 * Use JSON-LD to create structured data for your website. Structured data would add rich results of your website to the search result.
   
 * Google differentiates between the www and non-www version. When adding your website to Search Console, we recommend adding both http:// and https:// versions, as well as the www and non-www versions.
+  
+* Setting the value of the rel attribute of a link to nofollow or ugc will tell Google that certain links on your site shouldn't be followed: 
+  `<a href="http://www.example.com" rel="nofollow">Anchor text here</a>`
