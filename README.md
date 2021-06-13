@@ -25,3 +25,9 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 * Ensure that your <title> elements and alt attributes are descriptive, specific, and accurate.
 
 * Always specify your character encoding.
+  
+* make sure every page on your site has a title specified in the <title> tag. Every page of the site must have a descriptive and concise title tag.
+  
+* Use JSON-LD to create structured data for your website. Structured data would add rich results of your website to the search result.
+  
+* Google differentiates between the www and non-www version. When adding your website to Search Console, we recommend adding both http:// and https:// versions, as well as the www and non-www versions.
