@@ -34,3 +34,7 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
   
 * Setting the value of the rel attribute of a link to nofollow or ugc will tell Google that certain links on your site shouldn't be followed: 
   `<a href="http://www.example.com" rel="nofollow">Anchor text here</a>`
+
+* Use `data highlighter` to help google create a structured linked data for your site and show intuitive search results for your page.
+
+  
