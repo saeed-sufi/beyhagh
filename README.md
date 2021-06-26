@@ -37,4 +37,6 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 
 * Use `data highlighter` to help google create a structured linked data for your site and show intuitive search results for your page.
 
+* By including `font-display: swap` in your @font-face style, you can avoid FOIT in most modern browsers.
   
+* Add `rel="noopener"` or `rel="noreferrer"` to any external links to improve performance and prevent security vulnerabilities.
