@@ -59,8 +59,7 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 * A good indicator of your server-side performance is the time it takes to generate the HTML page (Page Generation Time). This is labeled as “Waiting” time on the first element in the waterfall graph (also known as the “Time-to-First-Byte”). Generally, this time should be kept under 600 milliseconds (or as low as possible).
   
 * Add the following code to `.htaccess` to prevent headers from expiring so soon:
-  ```
-  ## EXPIRES HEADER CACHING ##
+```## EXPIRES HEADER CACHING ##
 <IfModule mod_expires.c>
 ExpiresActive On
 ExpiresByType image/jpg "access 1 year"
@@ -77,4 +76,4 @@ ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access plus 1 month"
 </IfModule>
 ## EXPIRES HEADER CACHING ##
-  ```
+```
