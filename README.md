@@ -45,3 +45,7 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 ## Optimization
 
 * An object cache is a way of storing data from the database in memory, to prevent unnecessary queries on the database. 
+  
+* For server caching use Varnish cache which is very powerful when used with a WordPress caching plugin such as W3TC.
+
+* Use Varnish and W3TC as a caching solution.
