@@ -49,3 +49,11 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 * For server caching use Varnish cache which is very powerful when used with a WordPress caching plugin such as W3TC.
 
 * Use Varnish and W3TC as a caching solution.
+  
+* On a first request, for the first 14Kb bytes, latency is longer because it includes a DNS lookup, a TCP handshake, the secure TLS negotiation.
+  
+* Disk latency is the time it takes from the moment a computer, usually a server, receives a request, to the time the computer returns the response.
+  
+* GTmetrix assesses the front-end structure of your page to ensure that it is delivered as optimally as possible to your visitors
+ 
+* A good indicator of your server-side performance is the time it takes to generate the HTML page (Page Generation Time). This is labeled as “Waiting” time on the first element in the waterfall graph (also known as the “Time-to-First-Byte”). Generally, this time should be kept under 600 milliseconds (or as low as possible).
