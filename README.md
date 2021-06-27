@@ -136,3 +136,12 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 </IfModule>
 ## EXPIRES HEADER CACHING ##
 ```
+* Promote elements that you plan to animate using below code. This gives the browser the forewarning that changes are incoming.
+```
+.moving-element {
+  will-change: transform;
+}
+.moving-element {
+  transform: translateZ(0);
+}
+```
