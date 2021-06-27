@@ -40,3 +40,8 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 * By including `font-display: swap` in your @font-face style, you can avoid FOIT in most modern browsers.
   
 * Add `rel="noopener"` or `rel="noreferrer"` to any external links to improve performance and prevent security vulnerabilities.
+  
+  
+## Optimization
+
+* An object cache is a way of storing data from the database in memory, to prevent unnecessary queries on the database. 
