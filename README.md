@@ -57,3 +57,24 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 * GTmetrix assesses the front-end structure of your page to ensure that it is delivered as optimally as possible to your visitors
  
 * A good indicator of your server-side performance is the time it takes to generate the HTML page (Page Generation Time). This is labeled as “Waiting” time on the first element in the waterfall graph (also known as the “Time-to-First-Byte”). Generally, this time should be kept under 600 milliseconds (or as low as possible).
+  
+* Add the following code to `.htaccess` to prevent headers from expiring so soon:
+  ```
+  ## EXPIRES HEADER CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType image/svg "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType application/x-javascript "access plus 1 year"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access plus 1 month"
+</IfModule>
+## EXPIRES HEADER CACHING ##
+  ```
