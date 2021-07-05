@@ -145,3 +145,6 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
   transform: translateZ(0);
 }
 ```
+* Use `critters-webpack-plugin` to make critical css inline and lazyload the rest of css.
+
+* Use `defer` or `async` kaywords in `script` tags to make js files non-render blocking. The difference between the two is that `defer` cares about the scripts order whereas `async` doesn't. Also, note that `defer` finishes loading and executing script right before the `DOMContentLoaded` event is triggered. 
