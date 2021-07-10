@@ -149,8 +149,10 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 
 * Use `defer` or `async` kaywords in `script` tags to make js files non-render blocking. The difference between the two is that `defer` cares about the scripts order whereas `async` doesn't. Also, note that `defer` finishes loading and executing script right before the `DOMContentLoaded` event is triggered. 
   
-* Use `preload` to fetch styles and scripts sooner. The `at` attribute is also helpful for the browser to load files faster. 
+* Use `preload` to fetch styles and scripts sooner. The `at` attribute is also helpful for the browser to load files faster. Preload value tells the browser to download the files first and then browsers' main rendering machinery kicks in.
+  
  ```
-    <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="style.css" as="style">
   <link rel="preload" href="main.js" as="script">
   ```
+* If you want to preload a script, but then defer execution until exactly when you need it, use `preload` scripts this: [link to MDN preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload#scripting_and_preloads)
