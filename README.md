@@ -148,3 +148,9 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 * Use `critters-webpack-plugin` to make critical css inline and lazyload the rest of css.
 
 * Use `defer` or `async` kaywords in `script` tags to make js files non-render blocking. The difference between the two is that `defer` cares about the scripts order whereas `async` doesn't. Also, note that `defer` finishes loading and executing script right before the `DOMContentLoaded` event is triggered. 
+  
+* Use `preload` to fetch styles and scripts sooner. The `at` attribute is also helpful for the browser to load files faster. 
+ ```
+    <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="main.js" as="script">
+  ```
