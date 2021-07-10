@@ -156,3 +156,9 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
   <link rel="preload" href="main.js" as="script">
   ```
 * If you want to preload a script, but then defer execution until exactly when you need it, use `preload` scripts this: [link to MDN preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload#scripting_and_preloads)
+
+* How browsers work: 1. DNS (files referenced in html also go through DNS, DNS cache helps with the next requests) 2. TCP handshake 3. TLS (cipher) 4. Parse (creating cssom and dom) 5. render
+  
+* Waiting to obtain CSS doesn't block HTML parsing or downloading, but it does block JavaScript, because JavaScript is often used to query CSS properties’ impact on elements.
+  
+* The total time to create the CSSOM is generally less than the time it takes for one DNS lookup!
