@@ -162,3 +162,5 @@ Sitemap: http://mizbanfa.net/page-sitemap.xml
 * Waiting to obtain CSS doesn't block HTML parsing or downloading, but it does block JavaScript, because JavaScript is often used to query CSS properties’ impact on elements.
   
 * The total time to create the CSSOM is generally less than the time it takes for one DNS lookup!
+  
+* Use `preload` with css files in this way: ` <link rel="preload" href="./temp/styles.css" as="style" onload="this.rel='stylesheet'">`
